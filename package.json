@@ -1,0 +1,24 @@
+{
+  "name": "emudocs",
+  "version": "0.1.0",
+  "description": "Emudocs website engine",
+  "main": "server.js",
+  "scripts": {
+    "start": "emudocs serve",
+    "build": "emudocs build"
+  },
+  "keywords": [
+    "marked",
+    "documentation",
+    "emudocs",
+    "alc",
+    "alentra",
+    "generator"
+  ],
+  "author": "Allan Dp",
+  "license": "MIT",
+  "dependencies": {
+    "ejs": "^3.1.6",
+    "express": "^4.17.1",
+    "marked": "^2.1.3" }
+}
