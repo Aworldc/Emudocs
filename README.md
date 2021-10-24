@@ -2,4 +2,4 @@
 A fast, simple and easy article-based website engine
 
 [documentation](https://aworldc.github.io/emudocs)
-[download](https://www.example.com)
+[download](https://github.com/Aworldc/Emudocs/releases/download/1.0.0beta/rel.zip)
