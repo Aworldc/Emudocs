@@ -10,3 +10,7 @@ jobs:
                   node-version: '14'
             - run: npm install
             - run: node emu.js build
+            - uses: actions/upload-artifact@v3
+              with:
+                  name: build
+                  path: out
