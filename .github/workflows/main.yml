@@ -1,5 +1,5 @@
 name: build-docs
-on: []
+on: workflow_call
 jobs:
     build-docs:
         runs-on: ubuntu-latest
