@@ -4,13 +4,18 @@ jobs:
     build-docs:
         runs-on: ubuntu-latest
         steps:
-            - uses: actions/checkout@v3
-            - uses: actions/setup-node@v3
+            - name: load code
+              uses: actions/checkout@v3
+            - name: install node
+              uses: actions/setup-node@v3
               with:
                   node-version: '14'
-            - run: npm install
-            - run: node emu.js build
-            - uses: actions/upload-artifact@v3
+            - name: install dependencies
+              run: npm install
+            - name: build docs
+              run: node emu.js build
+            - name: deploy to pages
+              uses: JamesIves/github-pages-deploy-action@v4.3.3
               with:
-                  name: build
-                  path: out
+                  branch: gh-pages
+                  folder: out
