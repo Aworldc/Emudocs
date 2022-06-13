@@ -1,4 +1,4 @@
-- [ ] add support for exporting html
+- [x] add support for exporting html
 - [ ] add support for custom special pages
 - [ ] make more themes
-- [ ] write better documentation
+- [x] write better documentation
